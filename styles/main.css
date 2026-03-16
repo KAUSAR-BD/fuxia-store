@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.logo{
+.logo {
   max-width: 180px;
   max-height: 300px;
   text-decoration: none;
@@ -23,17 +23,17 @@ header {
   text-transform: uppercase;
 }
 
-nav{
+nav {
   margin: 4em;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   display: flex;
   gap: 4.1em;
   margin: 0;
 }
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -41,9 +41,9 @@ nav ul li a{
   position: relative;
 }
 
-nav ul li a.active::before{
+nav ul li a.active::before {
   position: absolute;
-  content:"";
+  content: "";
   width: 35%;
   height: 1px;
   border-bottom: 2px solid black;
@@ -52,37 +52,38 @@ nav ul li a.active::before{
 
 /* Hero Section */
 
-main{
+main {
   display: flex;
   gap: 10.8rem;
   align-items: center;
   margin-top: 11em;
 }
-.left-col{
+.left-col {
   width: 45%;
 }
 
-.right-col{
+.right-col {
   flex-grow: 1;
 }
-.main-title{
+.main-title {
   font-size: 5.2rem;
-  font-family: 'playfair Display';
+  font-family: "playfair Display";
   font-weight: normal;
   margin: 0;
 }
-.description{
+.description {
   font-size: 1.8rem;
 }
-.cta-btn{
+.cta-btn {
   margin: 5em 0;
 }
-.cta-btn, .secondary-cta{
+.cta-btn,
+.secondary-cta {
   display: flex;
   gap: 2em;
 }
-.primary-cta{
-  background-color: #F2F0DF;
+.primary-cta {
+  background-color: #f2f0df;
   font-size: 1.8rem;
   font-weight: bold;
   color: black;
@@ -90,7 +91,7 @@ main{
   border-radius: 1.9em;
   padding: 1em 2em;
 }
-.secondary-cta{
+.secondary-cta {
   font-size: 1.8rem;
   text-decoration: none;
   color: black;
@@ -100,6 +101,34 @@ main{
   align-items: center;
 }
 
-.secondary-cta svg{
+.secondary-cta svg {
   width: 20px;
+}
+.news {
+  display: flex;
+  gap: 3em;
+  padding: 5em;
+  border: 1px solid black;
+  border-radius: 0.8em;
+  position: relative;
+}
+.news::before {
+  position: absolute;
+  content: "";
+  background: url(../images/confetti.svg);
+  width: 100px;
+  height: 100px;
+  top: -20px;
+  left: -20px;
+  z-index: 2;
+}
+
+.employees {
+  font-size: 3.3rem;
+  margin: 0;
+  font-weight: 200;
+}
+.employees-details {
+  font-size: 1.4rem;
+  margin: 0;
 }
