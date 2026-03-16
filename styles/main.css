@@ -9,8 +9,97 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+/* Navbar */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.logo{
+  max-width: 180px;
+  max-height: 300px;
+  text-decoration: none;
+  color: crimson;
+  text-transform: uppercase;
+}
+
+nav{
+  margin: 4em;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  gap: 4.1em;
+  margin: 0;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+nav ul li a.active::before{
+  position: absolute;
+  content:"";
+  width: 35%;
+  height: 1px;
+  border-bottom: 2px solid black;
+  bottom: 0;
+}
+
+/* Hero Section */
+
+main{
+  display: flex;
+  gap: 10.8rem;
+  align-items: center;
+  margin-top: 11em;
+}
+.left-col{
+  width: 45%;
+}
+
+.right-col{
+  flex-grow: 1;
+}
+.main-title{
+  font-size: 5.2rem;
+  font-family: 'playfair Display';
+  font-weight: normal;
+  margin: 0;
+}
+.description{
+  font-size: 1.8rem;
+}
+.cta-btn{
+  margin: 5em 0;
+}
+.cta-btn, .secondary-cta{
+  display: flex;
+  gap: 2em;
+}
+.primary-cta{
+  background-color: #F2F0DF;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  border-radius: 1.9em;
+  padding: 1em 2em;
+}
+.secondary-cta{
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 1em 0;
+  gap: 2em;
+  align-items: center;
+}
+
+.secondary-cta svg{
+  width: 20px;
 }
