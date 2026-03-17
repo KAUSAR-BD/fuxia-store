@@ -112,7 +112,9 @@ main {
 
 .secondary-cta svg {
   width: 20px;
+  transition: transform 0.3s;
 }
+
 .news {
   display: flex;
   gap: 3em;
@@ -210,4 +212,10 @@ main {
 /* Animations */
 nav ul li a:hover::before {
   width: 35%;
+}
+.primary-cta:hover {
+  background: #e2d1bd;
+}
+.secondary-cta:hover svg {
+  transform: translateX(10px);
 }
