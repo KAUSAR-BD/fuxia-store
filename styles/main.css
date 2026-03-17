@@ -49,6 +49,15 @@ nav ul li a.active::before {
   border-bottom: 2px solid black;
   bottom: 0;
 }
+nav ul li a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  border-bottom: 2px solid rgb(143, 142, 142);
+  bottom: 0;
+  transition: width 0.3s;
+}
 
 /* Hero Section */
 
@@ -115,7 +124,7 @@ main {
 .news::before {
   position: absolute;
   content: "";
-  background: url(../images/confetti.svg);
+  background: url("../images/confetti.svg");
   width: 100px;
   height: 100px;
   top: -20px;
@@ -133,6 +142,7 @@ main {
   font-size: 1.4rem;
   margin: 0;
 }
+
 /* Right Column Gallery */
 
 .right-col {
@@ -164,6 +174,7 @@ main {
   height: 100%;
   top: 20px;
   left: -30px;
+  pointer-events: none;
 }
 
 .card2 {
@@ -195,4 +206,8 @@ main {
 }
 .product-price {
   font-size: 1.8rem;
+}
+/* Animations */
+nav ul li a:hover::before {
+  width: 35%;
 }
