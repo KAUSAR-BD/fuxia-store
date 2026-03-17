@@ -127,8 +127,39 @@ main {
   font-size: 3.3rem;
   margin: 0;
   font-weight: 200;
+  line-height: 100%;
 }
 .employees-details {
   font-size: 1.4rem;
   margin: 0;
+}
+/* Right Column Gallery */
+
+.right-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 260px;
+  gap: 2.3em;
+}
+
+.card {
+  border-radius: 0.8em;
+  padding: 1.1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+}
+
+.card1 {
+  grid-row: span 2;
+  background-image: url("../images/clothing3.jpg");
+}
+
+.card2 {
+  background-image: url("../images/clothing2.jpg");
+}
+
+.card3 {
+  background-image: url("../images/clothing1.jpg");
 }
